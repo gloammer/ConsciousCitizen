@@ -1,0 +1,29 @@
+.navbar-row {
+    display        : flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.left-part, .right-part {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+
+.navbar-box {
+    background: #3F51B5;
+    height: 80px;
+    width: 100%;
+}
