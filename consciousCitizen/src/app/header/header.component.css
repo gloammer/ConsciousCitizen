@@ -1,18 +1,37 @@
 .navbar-row {
     display        : flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100%;
 }
 
 .left-part, .right-part {
     display: flex;
-    justify-content: space-around;
-    width: 20%;
+    
+    width: 15%;
+}
+
+.left-part {
+    justify-content: start;
+}
+
+.right-part {
+    justify-content: end;  
+}
+
+.nav-item-brand {
+    width: 60%;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-item {
     list-style-type: none;
+    margin-left: 5%;
+}
+
+.nav-item-side {
+    margin: 0;
 }
 
 .nav-link {
