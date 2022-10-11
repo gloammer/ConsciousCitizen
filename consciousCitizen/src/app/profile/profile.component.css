@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, serif;
+    color      : black;
+}
+
+input:disabled {
+    background-color: #ddd;
+}
+
+/* Add padding to containers */
+.container {
+    padding         : 4%;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input {
+    font-size    : 16px;
+    width        : 100%;
+    padding      : 10px;
+    margin       : 5px 0 22px 0;
+    display      : inline-block;
+    border-style : solid;
+    border-width : 1px;
+    border-radius: 5px;
+    background   : white;
+}
+
+input.input-address {
+    width: 80%;
+}
+
+input:focus {
+    background-color: #ddd;
+    outline         : none;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #4CAF50;
+    color           : white;
+    padding         : 16px 20px;
+    margin          : 8px 0;
+    border          : none;
+    cursor          : pointer;
+    width           : 100%;
+    opacity         : 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+.form-input {
+    display       : flex;
+    flex-direction: column;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align      : center;
+}
+
+.container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    width         : 100%;
+}
+
+.container-block {
+    display        : flex;
+    justify-content: space-between;
+    width          : 60%;
+}
+
+.form-box {
+    width: 45%;
+}
+
+.container-address-block {
+    display        : flex;
+    justify-content: space-between;
+    width          : 100%;
+}
+
+.form-input {
+    width: 100%;
+}
+
+.button-box {
+    display       : flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding       : 13px;
+    margin: 0 1% 0 1%;
+    border       : 3px solid #3F51B5;
+    border-radius: 4px;
+    color: #3F51B5;
+    font-weight: bold;
+}
+
+.input-container-submit {
+   width: 20%;
+}
+
+button {
+    cursor: pointer;
+}
