@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, serif;
+    color      : black;
+}
+
+.about-wrapper{
+	max-width: 800px;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.about-title{
+	text-align: center;
+	margin-bottom: 40px;
+	color: #3F51B5;
+}
