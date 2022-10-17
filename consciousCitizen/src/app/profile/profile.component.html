@@ -1,1 +1,138 @@
-<p>profile works!</p>
+<form [formGroup]="personForm">
+  <div class="container">
+    <div class="container-block">
+      <div class="form-box">
+        <div class="form-input">
+          <label for="last-name"><b>Фамилия</b></label>
+          <input
+            type="text"
+            placeholder="Введите фамилию"
+            name="last-name"
+            formControlName="firstName"
+          />
+        </div>
+        <div class="form-input">
+          <label for="first-name"><b>Имя</b></label>
+          <input
+            type="text"
+            placeholder="Введите имя"
+            name="first-name"
+            formControlName="lastName"
+          />
+        </div>
+        <div class="form-input">
+          <label for="second-name"><b>Отчество</b></label>
+          <input
+            type="text"
+            placeholder="Введите отчество"
+            name="second-name"
+            formControlName="middleName"
+          />
+        </div>
+      </div>
+      <div class="form-box">
+        <div class="form-input">
+          <label for="city"><b>Город</b></label>
+          <input
+            type="text"
+            placeholder="Введите город"
+            name="city"
+            formControlName="city"
+          />
+        </div>
+        <div class="form-input">
+          <label for="street"><b>Улица</b></label>
+          <input
+            type="text"
+            placeholder="Введите улицу"
+            name="street"
+            formControlName="street"
+          />
+        </div>
+        <div class="container-address-block">
+          <div class="form-input">
+            <label for="house"><b>Дом</b></label>
+            <input
+              class="input-address"
+              type="text"
+              placeholder="Дом"
+              name="house"
+              formControlName="house"
+            />
+          </div>
+          <div class="form-input">
+            <label for="apartments"><b>Квартира</b></label>
+            <input
+              class="input-address"
+              type="text"
+              placeholder="Квартира"
+              name="apartments"
+              formControlName="apartment"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-block">
+      <div class="form-box">
+        <div class="form-input">
+          <label for="email"><b>Электронная почта</b></label>
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            formControlName="email"
+          />
+        </div>
+        <div class="form-input">
+          <label for="mobile"><b>Номер телефона</b></label>
+          <input
+            type="tel"
+            placeholder="Номер телефона"
+            name="mobile"
+            formControlName="phone"
+          />
+        </div>
+      </div>
+      <div class="form-box">
+        <div class="form-input">
+          <label for="login"><b>Логин</b></label>
+          <input type="text" name="login" formControlName="login" />
+        </div>
+        <div class="form-input">
+          <label for="password"><b>Пароль</b></label>
+          <input type="password" name="password" formControlName="password" />
+        </div>
+        <div class="form-input" *ngIf="isEditingMode">
+          <label for="new-password"><b>Новый пароль</b></label>
+          <input
+            type="password"
+            name="new-password"
+            formControlName="newPassword"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="button-box">
+      <button
+        class="input-container"
+        type="button"
+        (click)="modeChanged()"
+        *ngIf="!isEditingMode"
+      >
+        <img src="/assets/icons/v-icon.png" />
+      </button>
+      <button class="input-container" type="button" *ngIf="!isEditingMode">
+        <img src="/assets/icons/Vector.png" />
+      </button>
+      <button
+        class="input-container input-container-submit"
+        *ngIf="isEditingMode"
+        (click)="submitForm()"
+      >
+        СОХРАНИТЬ ИЗМЕНЕНИЯ
+      </button>
+    </div>
+  </div>
+</form>
